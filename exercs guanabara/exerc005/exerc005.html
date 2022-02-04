@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS</title>
+    <style>
+        body { font: 12pt Arial; }
+        button { font-size: 12pt; padding: 30pt;  }
+    </style>
+</head>
+
+<body>
+    <h1>Trabalhando com números</h1>
+    <button onclick='funcao()'>Clique para calcular</button>
+    <section id="sessao">
+        <p>O resultado vem aqui...</p>
+    </section>
+
+    <script>
+        window.alert('Seja bem vindo(a) ao meu site!');
+        function funcao(){
+            let numeros = window.prompt('Digite um número');
+            let resultado = document.getElementById('sessao');
+            // da para usar document.querySelector('section#sessao')
+
+            resultado.innerHTML = `<p>O dobro de ${numeros} é ${numeros*2} e a metade é ${numeros/2}!`;
+        }
+    </script>
+</body>
+</html>

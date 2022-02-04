@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programando em JS</title>
+    <style>
+        h1 { font-family: arial; }
+        button { padding: 30px; font-size: 15px; }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com dados</h1>
+    <button onclick='funcao()'>Clique aqui</button>
+    <section id="texto">
+        <p>Resultado será feito aqui</p>
+    </section>
+
+    <script>
+        function funcao(){
+            let nome = window.prompt('Qual seu nome?');
+            let resultado = document.getElementById('texto');
+            resultado.innerHTML = `<P> Olá ${nome}, tudo bem com você?`;
+        }
+    </script>
+</body>
+</html>

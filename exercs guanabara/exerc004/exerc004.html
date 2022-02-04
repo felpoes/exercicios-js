@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados com Java Script</title>
+    <style>
+        h1 { font-family: arial; }
+        button { padding: 30px; font-size: 15px; }
+    </style>
+</head>
+
+<body>
+    <h1>Trabalhando com dados 2.0</h1>
+    <button onclick="funcao()"> Clique aqui </button>
+    <secion id="texto">
+        <p>Aqui vai aparecer o resultado...</p>
+    </section>
+    
+    <script>
+        function funcao() {
+            let varnome = window.prompt("Digite seu nome: ");
+            document.getElementById("texto").innerHTML = `<p> Olá seu nome é ${varnome}, tudo bem contigo? `;
+        }
+    </script>
+</body>
+</html>

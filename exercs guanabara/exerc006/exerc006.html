@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Números com JS</title>
+    <style>
+        body { font: 12pt Arial }
+        button { padding: 30pt; font-size: 15pt }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Somando dois Números</h1>
+    <button onclick='funcao()'>Iniciar a soma</button>
+    <section id="escrita">
+        <p>O resultado vem aqui...</p>
+    </section>
+
+    <script>
+        function funcao() {
+            let numero1 = Number(window.prompt('Digite um número:'));
+            let numero2 = Number(window.prompt('Digite outro número'));
+
+            let resultado = document.querySelector('section#escrita');
+            resultado.innerHTML = `<p>A soma entre ${numero1} e ${numero2} é igual a <strong>${numero1+numero2}</strong>!`
+        }
+    </script>
+</body>
+</html>
